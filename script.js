@@ -154,7 +154,7 @@ const giftBtn = document.getElementById("giftBtn");
 
 giftBtn.addEventListener("click", () => {
 
-    alert("🎁 Surprise!\n\nTerima kasih sudah menjadi bagian terindah dalam hidupku ❤️");
+    alert("🎁 Surprise!\n\nMangeakkkkk ❤️");
 
 });
 
