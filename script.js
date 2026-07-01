@@ -132,18 +132,27 @@ const flame = document.querySelector(".flame");
 
 const blow = document.getElementById("blow");
 
+const modal = document.getElementById("wishModal");
+const closeModal = document.getElementById("closeModal");
+
 blow.addEventListener("click", () => {
-
     flame.style.transition = ".8s";
-
     flame.style.opacity = "0";
 
     setTimeout(() => {
-
-        alert("🎉 Wish granted!\n\nSemoga semua impianmu menjadi kenyataan ❤️");
-
+        modal.classList.add("show");
     }, 900);
+});
 
+closeModal.addEventListener("click", () => {
+    modal.classList.remove("show");
+});
+
+// Klik di luar modal untuk menutup
+modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
+        modal.classList.remove("show");
+    }
 });
 
 // =========================================
