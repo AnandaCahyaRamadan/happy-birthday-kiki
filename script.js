@@ -151,10 +151,28 @@ blow.addEventListener("click", () => {
 // =========================================
 
 const giftBtn = document.getElementById("giftBtn");
+const giftModal = document.getElementById("giftModal");
+const closeBtn = document.querySelector(".close");
 
 giftBtn.addEventListener("click", () => {
 
-    alert("🎁 Surprise!\n\nMangeakkkkk ❤️");
+    giftModal.style.display = "flex";
+
+});
+
+closeBtn.addEventListener("click", () => {
+
+    giftModal.style.display = "none";
+
+});
+
+giftModal.addEventListener("click", (e) => {
+
+    if (e.target === giftModal) {
+
+        giftModal.style.display = "none";
+
+    }
 
 });
 
